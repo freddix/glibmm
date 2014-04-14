@@ -2,12 +2,12 @@
 
 Summary:	A C++ interface for glib library
 Name:		glibmm
-Version:	2.34.1
+Version:	2.40.0
 Release:	1
 License:	LGPL
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/glibmm/2.34/%{name}-%{version}.tar.xz
-# Source0-md5:	25dccf8e95abcde034a002b450a43125
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/glibmm/2.40/%{name}-%{version}.tar.xz
+# Source0-md5:	f62754f4f5c9030f8ff43c7ed20556c2
 URL:		http://gtkmm.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -58,6 +58,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} -j1 install \
 	DESTDIR=$RPM_BUILD_ROOT	\
 	libdocdir=%{_gtkdocdir}/%{name}-%{apiver}
+
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
