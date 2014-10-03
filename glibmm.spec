@@ -1,13 +1,13 @@
 %include	/usr/lib/rpm/macros.perl
 
-Summary:	A C++ interface for glib library
+Summary:	C++ interface for glib library
 Name:		glibmm
-Version:	2.40.0
+Version:	2.42.0
 Release:	1
 License:	LGPL
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/glibmm/2.40/%{name}-%{version}.tar.xz
-# Source0-md5:	f62754f4f5c9030f8ff43c7ed20556c2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/glibmm/2.42/%{name}-%{version}.tar.xz
+# Source0-md5:	7c52cc42085d30ac3b73d74c3f2eb22e
 URL:		http://gtkmm.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -15,7 +15,7 @@ BuildRequires:	glib-devel
 BuildRequires:	libsigc++-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
-BuildRequires:	mm-common
+BuildRequires:	mm-common >= 0.9.7
 BuildRequires:	perl-XML-Parser
 BuildRequires:	pkg-config
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
